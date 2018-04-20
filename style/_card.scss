@@ -1,0 +1,61 @@
+//prefix for IE css grid support
+@mixin display-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+main {
+  .container {
+    @include display-grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 80px;
+
+    .card {
+      width: 65%;
+      -webkit-box-shadow: 0px 0px 20px 5px #c4c4c4;
+      border-radius: 9px;
+      background-color: white;
+      justify-self: center;
+      margin-top: 30px;
+      img {
+        width: 100%;
+        border-radius: 9px 9px 0px 0px;
+      }
+
+      &:hover {
+        -webkit-box-shadow: 0px 0px 20px 5px #c2dbed;
+        transform: scale(1.05, 1.05);
+        transition-duration: 0.5s;
+      }
+
+      .card-container {
+        @include display-grid;
+        grid-template-columns: 50% 50%;
+        padding-bottom: 3px;
+
+        .description-left {
+          position: relative;
+          padding-left: 7px;
+          h3,
+          p {
+            margin: 0;
+            color: grey;
+          }
+
+          h3 {
+            color: #129fd4;
+          }
+        }
+
+        .description-right {
+          @extend .description-left;
+          text-align: right;
+          padding-right: 7px;
+          h3 {
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// ________________________________________
+// SCSS VARIABLES
+// ________________________________________
+
+$primary-color: #002d84;
+$secondary-color: #e4eaee;
+$font-stack: Helvetica;
+
+// ________________________________________
+// IMPORT PARTIALS
+// ________________________________________
+
+@import "nav";
+@import "card";
+@import "footer";
+
+//Setting necessary parameters to make footer stick to the bottom of the page.
+html,
+body {
+  font-family: $font-stack;
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper {
+  background-color: $secondary-color;
+  min-height: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 805px) {
+  nav {
+    #logo {
+      width: 70%;
+    }
+  }
+  main {
+    .container {
+      grid-template-rows: auto;
+      grid-template-columns: none;
+    }
+  }
+}

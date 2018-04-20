@@ -1,0 +1,33 @@
+nav {
+  background-color: $primary-color;
+  display: grid;
+  grid-template-columns: 10% auto;
+  color: white;
+  padding-bottom: 7px;
+
+  a#home-link {
+    padding-left: 30px;
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1 {
+    padding-left: 30px;
+  }
+
+  #logo {
+    align-self: center;
+    justify-self: end;
+    width: 40%;
+    &:hover {
+      transform: scale(1.15, 1.15);
+      transition-duration: 0.1s;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}

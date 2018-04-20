@@ -2,36 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Price Comparison</title>
   <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
   <div class="wrapper">
     <nav>
-      <img src="images/logo.png" alt="blue circle with section of chess like pattern">
-      <h1>Price Comparison</h1>
+      <div id="logo"><a href="index.html"><img src="images/logo.png" alt="blue circle with section of chess like pattern"></a></div>
+      <h1 style="letter-spacing: 3px;">Price comparison</h1>
+      <div></div>
+      <a id="home-link" href="invoice.html">Invoice</a>
     </nav>
     <main>
-      <div class="card">
-        <img src="images/amsterdam.png" alt="bridge in amsterdam">
-        <div class="description-left">
-          <h3>Amsterdam</h3>
-          <p>Netherlands</p>
+      <div class="container">
+        <div class="card">
+          <img src="images/amsterdam.png" alt="bridge in amsterdam">
+          <div class="card-container">
+            <div class="description-left">
+              <h3>Amsterdam</h3>
+              <p><b>Netherlands</b></p>
+            </div>
+            <div class="description-right">
+              <h3>1189</h3>
+              <p>Average price</p>
+            </div>
+          </div>
         </div>
-        <div class="description-right">
-          <h3>1189</h3>
-          <p>Average price</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="images/london.png" alt="picture of 'Big Ben'">
-        <div class="description-left">
-          <h3>London</h3>
-          <p>United Kingdom</p>
-        </div>
-        <div class="description-right">
-          <h3>2360</h3>
-          <p>Average price</p>
+        <div class="card">
+          <img src="images/london.png" alt="picture of 'Big Ben'">
+          <div class="card-container">
+            <div class="description-left">
+              <h3>London</h3>
+              <p><b>United Kingdom</b></p>
+            </div>
+            <div class="description-right">
+              <h3>2360</h3>
+              <p>Average price</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
