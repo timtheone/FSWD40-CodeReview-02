@@ -21,11 +21,13 @@ window.onload = function() {
     "<p>If you want to buy a <b>Flight to London</b> and a <b>Flight to Amsterdam</b>, it costs:</p>" +
     "<p>" +
     sum +
-    "</p>";
+    "&euro;";
+  ("</p>");
 
   document.getElementsByClassName("invoice")[0].innerHTML +=
     "<p>If you want buy a <b>Flight to London</b> and a <b>Flight to Amsterdam</b> as a GoldenCard holder, you will get a 10% discount:</p>" +
     "<p>" +
     discount +
-    "</p>";
+    "&euro;";
+  ("</p>");
 };
